@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iChat - Realtime Chatting App</title>
-    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
-    <script src="client.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -15,19 +13,21 @@
             <p id="brand-name">IChat</p>
         </div>
         <div class="messages">
-            <div class="message-left">
+            <!-- <div class="message-left">
                 Harry: How are you?
             </div>
             <div class="message-right">
                 Rohan: I am good, wbu?
-            </div>
+            </div> -->
         </div>
         <div class="send">
-            <form action="POST" class="message-send">
+            <form action=# class="message-send">
                 <input type="text" name="new-message" id="message-type-area">
                 <button type="submit" id="message-submit">Send</button>
             </form>
         </div>
     </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
 </body>
 </html>
